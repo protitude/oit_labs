@@ -22,7 +22,7 @@
         "sizes": "384x384",
         "type": "image/png"
       }],
-  "start_url": "/?homescreen=1",
+  "start_url": "/oit_labs/",
   "background_color": "#0873b9",
   "display": "standalone",
   "theme_color": "#2E3AA1"

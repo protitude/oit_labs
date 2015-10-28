@@ -36,6 +36,7 @@ iron-pages {
 .right-sidebar {
   width: 40%;
   margin-top: 47px;
+  padding-right: 62px;
 }
 .right-sidebar img {
   height: 104px;
@@ -47,11 +48,10 @@ iron-pages {
   padding: 0;
 }
 .right-sidebar li {
-  min-width: 99%;
+  min-width: 100%;
   flex-grow: 1;
   color: #fff;
   background: #0873b9;
-  border-right: 1px solid #fff;
   margin: 0 0 1px 0;
 }
 .right-sidebar li a {
@@ -134,11 +134,11 @@ paper-toolbar.paper-toolbar-0 {
     flex-direction: column;
   }
   iron-pages, .right-sidebar {
-    width: 80%;
+    width: 85%;
   }
   .right-sidebar {
     margin: 0;
-    padding: 0 10%;
+    padding: 0 62px;
   }
   .right-sidebar img {
     height: inherit;
@@ -149,7 +149,7 @@ paper-toolbar.paper-toolbar-0 {
     width: 100%;
   }
   .right-sidebar {
-    width: 99.8%;
+    width: 99.5%;
     border-left: 1px solid #fff;
     padding: 0;
   }

@@ -1,0 +1,44 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="stylesheet" href="styles/main.css">
+<dom-module id="oit-search">
+<template>
+<form action="http://www.colorado.edu/oit/" method="post" id="google-appliance-block-form" accept-charset="UTF-8" _lpchecked="1">
+  <div>
+    <div class="container">
+      <div class="search-form-wrapper">
+        <div class="cu-search clearfix">
+          <div class="form-item form-type-textfield form-item-search-keys inner-label-processed">
+            <label hidden for="edit-search-keys">Enter the terms you wish to search for. </label>
+            <input placeholder="search here" type="text" id="edit-search-keys" name="search_keys" size="15" maxlength="128" class="form-text">
+          </div>
+          <div class="form-actions form-wrapper" id="edit-actions">
+            <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+          </div>
+        </div>
+      </div>
+      <div class="culinks"><strong>CU:</strong>
+        <a href="http://www.colorado.edu/">Home</a> •
+        <a href="http://www.colorado.edu/atoz">A to Z</a> •
+        <a href="http://www.colorado.edu/campusmap">Campus Map</a>
+      </div>
+  <input type="hidden" name="form_build_id" value="form-DAA1Y77Jbt-3Xe7Wrm36BzC7KWfjWJJExq6jKp_Ir-8">
+  <input type="hidden" name="form_id" value="google_appliance_block_form">
+</div>
+</div>
+</form>
+</template>
+<script>
+(function () {
+'use strict';
+Polymer({
+is: 'oit-search',
+properties: {
+items: {
+type: Array,
+notify: true,
+}
+}
+});
+})();
+</script>
+</dom-module>

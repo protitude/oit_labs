@@ -1,0 +1,22 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="oit-logo">
+  <template>
+    <img src="images/logo.png" width="100%" alt="University of Colorado Boulder" />
+  </template>
+    <script>
+    (function () {
+      'use strict';
+
+      Polymer({
+        is: 'oit-logo',
+        properties: {
+          items: {
+            type: Array,
+            notify: true,
+          }
+        }
+      });
+    })();
+  </script>
+</dom-module>

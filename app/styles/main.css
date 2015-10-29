@@ -9,11 +9,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 body {
   background: #fafafa;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333;
 }
-.content {
+paper-toolbar {
+  padding-top: 20px;
+}
+#mainContainer .content:not([style-scope]):not(.style-scope) {
   display: flex;
+  min-height: 93%;
 }
 .library, .gears {
   position: absolute;
@@ -28,7 +32,6 @@ body {
 }
 iron-pages {
   width: 60%;
-  height: 100%;
 }
 .style-scope .content:not([style-scope]):not(.style-scope) {
   height: inherit;
@@ -43,7 +46,7 @@ iron-pages {
 }
 .right-sidebar ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   list-style: none;
   padding: 0;
 }
@@ -69,24 +72,27 @@ a{
   color: #0072bc;
   border-bottom: 1px dotted #0072bc;
 }
+a:hover{
+  border-bottom: none;
+}
 
 oit-logo {
-  padding: 0 0 0 50px;
+  padding: 0 0 0 46px;
 }
 oit-search {
-  padding: 10px 50px 0 0;
+  padding: 10px 46px 0 0;
 }
 oit-search a {
   color: #fff;
   border: none;
 }
 [id="footer"] {
-  background: #000;
+  background: #333;
   color: #fff;
   font-size: 80%;
   line-height: 1.4em;
   height: 6em;
-  padding: 2em 60px 0 60px;
+  padding: 2em 63px 0 61px;
 }
 [id="footer"] a {
   color: #cfb87c;
@@ -130,7 +136,7 @@ paper-toolbar.paper-toolbar-0 {
 }*/
 
 @media all and (min-width: 0) and (max-width: 840px) {
-  .content {
+  #mainContainer .content:not([style-scope]):not(.style-scope) {
     flex-direction: column;
   }
   iron-pages, .right-sidebar {
@@ -182,7 +188,9 @@ paper-toolbar.paper-toolbar-0 {
     display: flex;
     flex-wrap: wrap;
   }
-  oit-search .cu-search input.form-text {
+  oit-search .cu-search input.form-text,
+  #google-appliance-block-form .culinks,
+  .search-form-wrapper, .cu-search {
     width: 130px;
   }
   oit-search .cu-search input.form-text{

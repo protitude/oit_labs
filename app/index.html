@@ -49,7 +49,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <span id="browser-sync-binding"></span>
     <template is="dom-bind" id="app">
     <!-- Main Area -->
-    <paper-scroll-header-panel main id="headerPanelMain">
+    <paper-scroll-header-panel main id="headerPanelMain" condensed-header-height="90" condenses keep-condensed-header>
       <!-- Main Toolbar -->
       <paper-toolbar id="mainToolbar" class="medium-tall">
         <!-- <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button> -->
@@ -139,8 +139,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </ul>
           </div>
       </footer>
-        <!-- Uncomment next block to enable Service Worker support (1/2) -->
-        <!--
+
         <paper-toast id="caching-complete"
           duration="6000"
           text="Caching complete! This app will work offline.">
@@ -153,7 +152,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             cache-config-file="cache-config.json">
           </platinum-sw-cache>
         </platinum-sw-register>
-        -->
+
         </template>
         <!-- build:js scripts/app.js -->
         <script src="scripts/app.js"></script>

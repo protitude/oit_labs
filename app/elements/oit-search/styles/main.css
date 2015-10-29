@@ -6,6 +6,7 @@
   padding:8px 28px 8px 8px;
   background-color: #fff;
   float: right;
+  margin-bottom: 5px;
 }
 .search-form-wrapper, .cu-search {
   position: relative;

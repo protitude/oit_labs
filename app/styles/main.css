@@ -57,9 +57,13 @@ iron-pages {
   background: #0873b9;
   margin: 0 0 1px 0;
 }
+.right-sidebar li:hover {
+  opacity: 0.98;
+}
 .right-sidebar li a {
   display: block;
   text-align: center;
+  border-bottom: none;
   width: 100%;
   color: #fff;
   padding: 10px 0;

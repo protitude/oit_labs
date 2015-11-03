@@ -31,6 +31,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   // See https://github.com/Polymer/polymer/issues/1381
   window.addEventListener('WebComponentsReady', function() {
     // imports are loaded and elements have been registered
+    //var headerHeight = Polymer.dom(document).querySelector('.bg-container').height;
+    var headerHeight = Polymer.dom(document).querySelector('.medium-tall').offsetHeight;
+    var footerHeight = Polymer.dom(document).querySelector('#footer').offsetHeight;
+    var height = window.innerHeight-headerHeight-footerHeight;
+    Polymer.dom(document).querySelector('.content').style.minHeight = height + 'px';
+    window.onresize = resize;
+    function resize() {
+      setTimeout(function() {
+        var height = window.innerHeight-headerHeight-footerHeight;
+        Polymer.dom(document).querySelector('.content').style.minHeight = height + 'px';
+      }, 100);
+    }
   });
 
   // Main area's paper-scroll-header-panel custom condensing transformation of

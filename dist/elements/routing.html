@@ -17,17 +17,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // More info: https://visionmedia.github.io/page.js/
 
     // Middleware
-    // function scrollToTop(ctx, next) {
-    //   app.scrollPageToTop();
-    //   next();
-    // }
+    function scrollToTop(ctx, next) {
+      app.scrollPageToTop();
+      next();
+    }
 
     window.location.pathname.replace(/\/$/, '');
 
     // Routes
-    // page('/', scrollToTop, function() {
-    //   app.route = 'home';
-    // });
+    page('/oit_labs', scrollToTop, function() {
+      app.route = 'home';
+    });
 
     // page('/users', scrollToTop, function() {
     //   app.route = 'users';
@@ -42,15 +42,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     //   app.route = 'contact';
     // });
 
-    // page('*', function() {
-    //   app.$.toast.text = 'Can\'t find: ' + window.location.href  + '. Redirected you to Home Page';
-    //   app.$.toast.show();
-    //   page.redirect('/');
-    // });
+    page('*', function() {
+      page.redirect('/oit_labs');
+    });
 
     // add #! before urls
     page({
-      hashbang: false
+      hashbang: true
     });
 
   });

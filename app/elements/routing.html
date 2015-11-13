@@ -22,6 +22,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       next();
     }
 
+    window.location.pathname.replace(/\/$/, '');
+
     // Routes
     page('/', scrollToTop, function() {
       app.route = 'home';

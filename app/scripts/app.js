@@ -36,6 +36,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     var footerHeight = Polymer.dom(document).querySelector('#footer').offsetHeight;
     var height = window.innerHeight-headerHeight-footerHeight;
     Polymer.dom(document).querySelector('.content').style.minHeight = height + 'px';
+    /* jshint ignore:start */
     window.onresize = resize;
     function resize() {
       setTimeout(function() {
@@ -43,6 +44,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         Polymer.dom(document).querySelector('.content').style.minHeight = height + 'px';
       }, 100);
     }
+    /* jshint ignore:end */
   });
 
   // Main area's paper-scroll-header-panel custom condensing transformation of

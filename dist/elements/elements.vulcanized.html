@@ -12343,17 +12343,17 @@ module.exports = Array.isArray || function (arr) {
     // More info: https://visionmedia.github.io/page.js/
 
     // Middleware
-    function scrollToTop(ctx, next) {
-      app.scrollPageToTop();
-      next();
-    }
+    // function scrollToTop(ctx, next) {
+    //   app.scrollPageToTop();
+    //   next();
+    // }
 
     window.location.pathname.replace(/\/$/, '');
 
     // Routes
-    page('/', scrollToTop, function() {
-      app.route = 'home';
-    });
+    // page('/', scrollToTop, function() {
+    //   app.route = 'home';
+    // });
 
     // page('/users', scrollToTop, function() {
     //   app.route = 'users';
@@ -12368,15 +12368,15 @@ module.exports = Array.isArray || function (arr) {
     //   app.route = 'contact';
     // });
 
-    page('*', function() {
-      app.$.toast.text = 'Can\'t find: ' + window.location.href  + '. Redirected you to Home Page';
-      app.$.toast.show();
-      page.redirect('/');
-    });
+    // page('*', function() {
+    //   app.$.toast.text = 'Can\'t find: ' + window.location.href  + '. Redirected you to Home Page';
+    //   app.$.toast.show();
+    //   page.redirect('/');
+    // });
 
     // add #! before urls
     page({
-      hashbang: true
+      hashbang: false
     });
 
   });

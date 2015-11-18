@@ -25,7 +25,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     window.location.pathname.replace(/\/$/, '');
 
     // Routes
-    page('/webcontent/lab', scrollToTop, function() {
+    page('/webcontent/wireless', scrollToTop, function() {
       app.route = 'home';
     });
 
@@ -43,7 +43,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // });
 
     page('*', function() {
-      page.redirect('/webcontent/lab');
+      page.redirect('/webcontent/wireless');
     });
 
     // add #! before urls

@@ -9,8 +9,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 body {
   background: #fafafa;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333;
+}
+body .paper-font-display4,
+body .paper-font-display3,
+body .paper-font-display2,
+body .paper-font-display1,
+body .paper-font-headline,
+body .paper-font-title,
+body .paper-font-subhead,
+body .paper-font-body2,
+body .paper-font-body1,
+body .paper-font-caption,
+body .paper-font-menu,
+body .paper-font-button,
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 paper-toolbar {
   padding-top: 20px;
@@ -194,16 +208,5 @@ paper-toolbar.paper-toolbar-0 {
   oit-search {
     display: flex;
     flex-wrap: wrap;
-  }
-  oit-search .cu-search input.form-text,
-  #google-appliance-block-form .culinks,
-  .search-form-wrapper, .cu-search {
-    width: 130px;
-  }
-  oit-search .cu-search input.form-text{
-    padding:4px 28px 4px 8px;
-  }
-  oit-search .search-form-wrapper .form-actions {
-    top: 2px;
   }
 }

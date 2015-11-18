@@ -71,6 +71,9 @@ iron-pages {
 .right-sidebar li paper-button {
   width: 100%;
 }
+h1 {
+  font-size: 1.8em;
+}
 a{
   text-decoration: none;
   color: #0072bc;

@@ -12352,7 +12352,7 @@ module.exports = Array.isArray || function (arr) {
     window.location.pathname.replace(/\/$/, '');
 
     // Routes
-    page('/webcontent/wireless', scrollToTop, function() {
+    page('/oit_labs', scrollToTop, function() {
       app.route = 'home';
     });
 
@@ -12370,7 +12370,7 @@ module.exports = Array.isArray || function (arr) {
     // });
 
     page('*', function() {
-      page.redirect('/webcontent/wireless');
+      page.redirect('/oit_labs');
     });
 
     // add #! before urls

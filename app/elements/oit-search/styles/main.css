@@ -1,9 +1,9 @@
 /* Search text field - extra right padding for search submit button */
 .cu-search input.form-text{
-  width:180px;
+  width:126px;
   max-width: 100%;
   line-height: 100%;
-  padding:8px 28px 8px 8px;
+  padding:4px 28px 4px 8px;
   background-color: #fff;
   float: right;
   margin-bottom: 5px;
@@ -23,7 +23,7 @@
 }
 .search-form-wrapper .form-actions {
   position: absolute;
-  top:6px;
+  top: 2px;
   right:0;
   z-index:3;
 }
